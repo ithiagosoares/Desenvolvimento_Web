@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudio</title>
+    <link rel="shortcut icon" href="img/html.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>Reproduzindo áudio:</h1>
+        <audio preload="metadata" controls autoplay loop>
+            <!--Metadata, autoplay e none-->
+            <source src="midia/christmas-chores - RKVC.mp3" type="audio/mpeg">
+            <source src="midia/christmas-chores - RKVC.ogg" type="audio/ogg">
+            <source src="midia/christmas-chores - RKVC.wav" type="audio/wav"> <!--MUITO PESADO-->
+            <p>O seu navegador não é capaz de reproduzir esse áudio.
+            <a href="download/midia/" type="audio/mpeg">Baixar o áudio mp3.</a></p>
+        </audio>
+    <h3>Atributos da tag <em>audio</em>.</h3>
+        <p>
+            <ul>
+                <dt><strong>preload</strong></dt>
+                <dd>
+                    <ol type="1">
+                        <li><em>Metadata- </em> Apresenta pequenos dados, como tipo de arquivo, tamanho e a duração do áudio.</li>
+                        <li><em>Auto- </em> Inicia o áudio assim que a página for carregada.</li>
+                        <li><em>None- </em> Não carregará nada até que cliquem no áudio.</li>
+                    </ol>
+                </dd>
+                <dt><strong>controls</strong></dt>
+                <dd><em>Apresenta o player na tela.</em></dd>
+                <dt><strong>autoplay</strong></dt>
+                <dd><em>Inicia automaticamente o áudio, assim que a página for carregada.</em></dd> <!--Apenas em alguns navegadores.-->
+                <dt><strong>loop</strong></dt>
+                <dd><em>Faz com que o áudio se repita, assim que o áudio acabar.</em></dd>
+            </ul>
+        </p>
+    <h1>Reproduzindo vídeos:</h1>
+    <h3><ins>Formatos compatíveis aos navegadores.</ins></h3>
+    <img src="img/tabela-p.JPG" alt="tabela"> <br>
+    <h3>Atributos das tags de vídeo:</h3>
+    <p>
+        <ul>
+            <dt><strong>width</strong></dt>
+                <dd><em>A largura do quadro em pixels.</em></dd>
+            <dt><strong>poster</strong></dt>
+                <dd><em>Imagem que vai aparecer como <ins>thumbnail</ins>.</em></dd>
+            <dt><strong>controls</strong></dt>
+                <dd><em>Apresenta o player na tela.</em></dd>
+            <dt><strong>autoplay</strong></dt> <!--Apenas em alguns navegadores.-->
+                <dd>Inicia automaticamente o áudio, assim que a página for carregada.</dd>
+            <dt><strong>width</strong></dt>
+                <dd><em>A largura do quadro em pixels.</em></dd>
+            <dt><strong>height</strong></dt>
+                <dd><em>A altura do quadro em pixels CSS. O padrão é 150</em></dd>
+            <dt><strong>src</strong></dt>
+                <dd><em>URL do vídeo.</em></dd>
+            <dt><strong>title</strong></dt>
+                <dd><em>Título do vídeo.</em></dd>
+        </ul>
+    </p>
+        <video width="600" poster="midia/foto-p.png" controls autoplay>
+            <source src="midia/pexels-m.mp4" type="video/mp4">
+            <source src="midia/pexels-p.webm" type="video/webm">
+        </video> <!--Esse modo consome o serviço de ospedagem-->
+    <h2>Reproduzindo vídeos do YouTube:</h2><!--Não consome o serviço de ospedagem, somente do YouTube-->
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eF9Qoc6p_4Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h2>Reproduzindo vídeos do Vimeo:</h2><!--Não consome o serviço de ospedagem, somente do Viemo-->
+        <iframe src="https://player.vimeo.com/video/197093965?color=ff0179&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        <p><a href="https://vimeo.com/197093965">Reel 2016</a> from <a href="https://vimeo.com/wabbla">Alvise Zennaro</a> on <a href="https://vimeo.com">Vimeo</a>.</p> 
+</body>
+</html>

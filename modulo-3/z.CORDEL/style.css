@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+
+
+body{
+    margin: auto;
+}
+header{
+    background-color: black;
+}
+.header{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-size: 10vw;
+    height: 100px;
+    margin-top: 0;
+    margin-bottom: 0,5em;
+}
+header > p{
+    font-size: 20px;
+    padding-bottom: 50px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
+section{
+    font-family: Carter One;
+    line-height: 2em;
+    font-size: 2vw;
+    
+}
+.normal{
+    background-color: white;
+    color: black;
+    margin-left: 35px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+.imagem{
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    width: 430px;
+    
+    margin-left: 35px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+#fundojoaninha{
+    display: block;
+    background-image: url(img/background001.jpg);
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    height: 900px;
+}
+#fundolivro{
+    background-image: url(img/background002.jpg);
+    background-attachment: fixed;
+    background-position: center left;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
