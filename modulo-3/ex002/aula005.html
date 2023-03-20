@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de fundo</title>
+    <style>
+        body {
+            height: 100vh;
+            background-color: black;
+            background-image: url('imagens/wallpaper002.jpg');
+            background-position: center top;
+            background-repeat: no-repeat; 
+            /* 
+            Ele pode repetir tanto no eixo Y, quanto no X 
+            */
+
+            background-size: cover; 
+            /*
+            Contain = Mantem a imagem 100% exibida, mas possui barras pretas.
+
+            Cover = Vai fazer caber a imagem inteira no background, mas ele pode cortar um pouco a imagem.
+
+            Auto = Deixa o navegador se virar para mostrar a imagem.
+
+            100% = Mostra a imagem inteira tambem, mas fica com partes pretas.
+            */
+            background-attachment: fixed;
+            /* Attachment = vinculo
+
+            Scroll = O fundo vai junto com o conteudo.
+
+            Fixed = O fundo fica parado, somente o conteudo rola.
+            */
+            background: black url('imagens/wallpaper002.jpg') center top no-repeat cover fixed;
+        }
+
+        /* Shorthand - background
+            color > image > position > repeat > [size (ainda nao e aplicavel)] > attachment
+        */
+
+        main {
+            background-color: white;
+            margin: auto;
+            max-width: 400px;
+            padding: 10px;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, delectus corporis perspiciatis quidem tempora sapiente rem debitis assumenda accusamus asperiores ipsam non est natus qui dolor eveniet? Error, dignissimos molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus possimus in rerum sequi nihil nobis tempore consequuntur quos, perferendis ad consequatur, optio eos repellendus. Temporibus non dignissimos eveniet voluptatibus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat doloremque repellat labore deserunt, animi error corrupti debitis voluptate laudantium consequuntur itaque quaerat commodi dolore illum ad. Nostrum, alias sint.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, delectus corporis perspiciatis quidem tempora sapiente rem debitis assumenda accusamus asperiores ipsam non est natus qui dolor eveniet? Error, dignissimos molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus possimus in rerum sequi nihil nobis tempore consequuntur quos, perferendis ad consequatur, optio eos repellendus. Temporibus non dignissimos eveniet voluptatibus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat doloremque repellat labore deserunt, animi error corrupti debitis voluptate laudantium consequuntur itaque quaerat commodi dolore illum ad. Nostrum, alias sint.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, delectus corporis perspiciatis quidem tempora sapiente rem debitis assumenda accusamus asperiores ipsam non est natus qui dolor eveniet? Error, dignissimos molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus possimus in rerum sequi nihil nobis tempore consequuntur quos, perferendis ad consequatur, optio eos repellendus. Temporibus non dignissimos eveniet voluptatibus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat doloremque repellat labore deserunt, animi error corrupti debitis voluptate laudantium consequuntur itaque quaerat commodi dolore illum ad. Nostrum, alias sint.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, delectus corporis perspiciatis quidem tempora sapiente rem debitis assumenda accusamus asperiores ipsam non est natus qui dolor eveniet? Error, dignissimos molestias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus possimus in rerum sequi nihil nobis tempore consequuntur quos, perferendis ad consequatur, optio eos repellendus. Temporibus non dignissimos eveniet voluptatibus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim placeat doloremque repellat labore deserunt, animi error corrupti debitis voluptate laudantium consequuntur itaque quaerat commodi dolore illum ad. Nostrum, alias sint.</p>
+    </main>
+</body>
+</html>
